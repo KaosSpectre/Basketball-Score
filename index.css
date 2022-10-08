@@ -2,62 +2,81 @@
     border: solid black 1px;
     overflow: hidden;
 } */
+@font-face {
+	font-family: "Cursed Timer ULiL";
+	src: url("CursedTimerUlil-Aznm.ttf");
+}
 body {
-    margin: 0;
-    height: 100vh;
-    min-height: 300px;
-    width: 100vw;
-    min-width: 600px;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	height: 100%;
+	min-height: 300px;
+	width: 100%;
+	min-width: 600px;
+	margin: 0;
+	padding: 0;
 }
 h3 {
-    color: #eee;
-    text-align: center;
+	color: #eee;
+	text-align: center;
+	font-size: 1.5rem;
 }
 h1 {
-    display: flex;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-    border-color: white;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    font-size: 5rem;
+	display: flex;
+	color: red;
+	font-family: "Cursed Timer ULiL", sans-serif;
+	border-color: white;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	font-size: 5rem;
 }
 .container {
-    display: flex;
-    justify-content: space-around;
-    background: #1B244A;
-    height: 100vh;
-    width: 100vw;
-    min-width: 600px;   
+	background: #222;
+	height: 100%;
+	width: 100%;
+	min-width: 600px;
+	display: flex;
+}
+.scoreboard {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin: auto;
+	background: #2323ae;
+	width: 750px;
+	padding: 20px;
 }
 .score {
-    background: #000;
-    content: "";
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    border-radius: 10%;
-    border: cyan solid;
+	background: #000;
+	content: "";
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+	border-radius: 10%;
+	border: cyan solid;
 }
 .reset {
-    margin-top: 125px;
+	margin-top: 125px;
 }
 .btns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3px;
-    height: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 3px;
+	height: 50px;
 }
 .btn {
-    border-radius: 25%;
-    border-color: #eee;
-    background-color: #1B244A;
-    color: #eee;
-    padding: 0;
-    margin: 2px;
+	border-radius: 10px;
+	border-color: #eee;
+	background-color: #1b244a;
+	color: #eee;
+	padding: 0;
+	margin: 2px;
+}
+.new-game {
+	padding: 10px 15px;
+}
+.btn:hover {
+	cursor: pointer;
 }
