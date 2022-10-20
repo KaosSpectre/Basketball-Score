@@ -50,7 +50,7 @@ function newGame() {
 	guestScore.textContent = 0;
 	guestPoints = 0;
 }
-
+//attempting to add outline to winning team
 if (homePoints > guestPoints) {
 	document.getElementById("outline-home").className = ".outline";
 } else if (homePoints < guestPoints) {
