@@ -38,6 +38,12 @@ h1 {
 	min-width: 600px;
 	display: flex;
 }
+
+.outline {
+	border: 1px solid cyan;
+	border-radius: 5px;
+}
+
 .scoreboard {
 	display: flex;
 	justify-content: space-around;
@@ -46,7 +52,7 @@ h1 {
 	background: #1b244a;
 	width: 750px;
 	padding: 20px;
-	border: 5px solid whitesmoke;
+	border: 5px solid white;
 	border-radius: 10px;
 }
 .score {
@@ -58,7 +64,7 @@ h1 {
 	justify-content: space-around;
 	margin-bottom: 20px;
 	border-radius: 10%;
-	border: 5px cyan solid;
+	border: 5px white solid;
 }
 .winning {
 	border: 5px green solid;
@@ -74,13 +80,13 @@ h1 {
 }
 .btn {
 	border-radius: 10px;
-	border: 2px solid cyan;
+	border: 2px solid white;
 	background-color: #010101;
-	color: cyan;
+	color: white;
 	padding: 0;
 	margin: 2px;
 }
-.new-game {
+#new-game {
 	padding: 10px 15px;
 }
 .btn:hover {
