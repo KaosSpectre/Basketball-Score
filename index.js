@@ -37,11 +37,13 @@ newGameEl.addEventListener("click", function () {
 function addHome(points) {
 	homePoints += points;
 	homeScore.textContent = homePoints;
+	leadingTeam();
 }
 // add points to guestScore
 function addGuest(points) {
 	guestPoints += points;
 	guestScore.textContent = guestPoints;
+	leadingTeam();
 }
 // reset both scores to 0 when newGame runs
 function newGame() {
@@ -50,9 +52,11 @@ function newGame() {
 	guestScore.textContent = 0;
 	guestPoints = 0;
 }
-//attempting to add outline to winning team
-if (homePoints > guestPoints) {
-	document.getElementById("outline-home").className = ".outline";
-} else if (homePoints < guestPoints) {
-	document.getElementById("outline-guest").className = ".outline";
+//attempting to add outline to winning
+function leadingTeam() {
+	if (homePoints > guestPoints) {
+		document.getElementById("outline-home").className = ".outline";
+	} else if (homePoints < guestPoints) {
+		document.getElementById("outline-guest").className = ".outline";
+	}
 }
